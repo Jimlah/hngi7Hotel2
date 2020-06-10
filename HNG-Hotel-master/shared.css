@@ -1,0 +1,140 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Miss+Fajardose&family=Poppins&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 16px;
+}
+#header {
+  background-color: rgba(23, 22, 20, 0.47);
+  display: flex;
+  padding: 0 2em;
+  align-items: center;
+  justify-content: space-between;
+}
+main {
+  background: #031c29;
+  min-height: 100vh;
+}
+h2 a {
+  text-decoration: none;
+  color: #ffeeff;
+  font-family: "Miss Fajardose", cursive;
+  font-size: 55px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 69px;
+}
+
+.menu {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+}
+nav li {
+  margin-left: 60px;
+}
+nav li a {
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #fefefe;
+  line-height: 25px;
+  transition: color 1s ease;
+  font-size: 20px;
+}
+
+nav li a:hover {
+  color: #c9a96a;
+}
+footer {
+  background: rgba(23, 22, 20, 0.47);
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 18px;
+  line-height: 20px;
+  padding: 1em 0;
+  font-family: "Poppins", sans-serif;
+}
+span {
+  color: #fff;
+}
+
+.ham {
+  display: none;
+
+}
+
+@media (max-width: 768px) {
+    h2 a{
+        font-size: 45px;
+    }
+  .ham {
+    display: block ;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 99;
+  }
+  .ham:focus {
+    outline: none;
+  }
+  .icon-close {
+    
+    display: none;
+  }
+   .icon-ham{
+    filter: brightness(0) invert(1);
+  }
+  .icon-close{
+    filter: brightness(0) invert(1);
+  }
+
+  .show-nav .icon-close {
+    display: block;
+  }
+  .show-nav .icon-ham {
+    display: none;
+  }
+
+ .menu {
+    background-color: rgb(223, 219, 219);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    position: fixed;
+    top: 70px;
+    left: 20px;
+    width: calc(100% - 40px);
+    transform: translate(120%);
+    z-index: 100;
+    transition: transform 0.4s ease;
+  }
+
+  .show-nav .menu {
+    transform: translateX(0);
+  }
+ .menu li {
+    margin: 20px 30px;
+    text-align: center;
+  }
+  nav.menu li a {
+    color: black;
+  }
+  footer{
+    margin-top: 2rem;
+    flex-direction: column;
+    padding-bottom: 0.2rem;
+  }
+  span{
+      margin: .5rem 1em;
+      text-align: center;
+      font-size: 16px;
+      line-height: 1;
+  }
+}

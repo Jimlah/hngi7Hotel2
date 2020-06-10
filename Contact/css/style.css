@@ -1,0 +1,241 @@
+body{
+    background: #031C29;
+    color: #C9A96A;
+    margin: 0px;
+}
+
+.main-container{
+    /* width: 100%; */
+    padding-right: 15px;
+    padding-left: 15px;
+    max-width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.ht-row{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3rem;
+    grid-column-gap: 3rem;
+    grid-row-gap: 3rem;
+    grid-gap: 3rem;
+
+
+    /* display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px; */
+}
+
+.col{
+    display: grid;
+    align-items: start;
+    margin-bottom: 30px;
+}
+
+.ht-contain{
+    /* width: 100%; */
+    padding: 0px 60px;
+}
+
+#ht-title{
+    padding:  0;
+    padding-top: 20px;
+  
+    /* width: 38%; */
+}
+
+
+.heading{
+    font-family: Centaur;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    margin: 0px;
+    /* line-height: 91px; */
+    color: #C9A96A;
+    text-align: center;
+}
+
+.subHeading{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 35px;
+    letter-spacing: 0.065em;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.subHeading, p>span {
+    display: block;
+}
+
+.btn-hotel{
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 10px 90px;
+    background: #C9A96A;
+    color: #FFFFFF;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 45px;
+    border: 0px;
+    cursor: pointer;
+}
+
+
+.vertical-center {
+    text-align: center;
+}
+
+/*Input Auto fill Selected*/
+input:-internal-autofill-selected {
+    -webkit-appearance: menulist-button;
+    background-color: none !important;
+    background-image: none !important;
+    color: white !important;
+}
+
+
+
+
+
+/*Form Styling*/
+form {
+    padding: 50px 0px;
+}
+
+label{
+    display: inline-block;
+    margin-bottom: .5rem;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+input {
+    border: 0px none;
+    border-bottom: 0.5px solid #ffffff;
+    background: none;
+    color: white;
+    font-size: 18px;
+}
+
+input:focus, textarea:focus, select:focus{
+    outline: none;
+    border-bottom: 1px solid #C9A96A;
+}
+
+input:hover, textarea:hover, select:hover{
+    outline: none;
+    border-bottom: 1px solid #C9A96A;
+}
+
+input[type=text]{
+    border: 0px 0px 5px 0px solid red !important;
+}
+
+textarea#message {
+    width: 100%;
+    height: 200px;
+}
+
+input#title {
+    width: 47.5%;
+}
+
+/*Responsiveness on Mobile and Tablet*/
+
+@media (max-width: 768px) {
+    .ht-row {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .heading{
+        font-size: 68px;
+        text-align: left;
+    }
+
+    .subHeading{
+        font-size: 18px;
+    }
+
+    .ht-contain{
+        padding: 10px;
+    }
+
+    .ht-row{
+        grid-gap: 1.5rem;
+        grid-column-gap: 1.5rem;
+        grid-row-gap: 1.5rem;
+        grid-gap: 1.5rem;
+    }
+    .btn-hotel{
+        padding: 20px 90px;
+    }
+}
+@media (max-width: 480px) {
+    .ht-row {
+        grid-template-columns: 1fr;
+        grid-gap: 0.5rem;
+    }
+    .col{
+        margin-bottom: 30px;
+    }
+
+    input#title {
+        width: 100%;
+    }
+
+    .heading{
+        font-size: 48px;
+    }
+
+    .subHeading{
+        font-size: 16px;
+    }
+
+    .ht-contain{
+        padding: 10px;
+    }
+
+    .subHeading, p>span {
+        display: inline !important;
+    }
+
+    .btn-hotel{
+        width: 100%;
+        margin-top: 40px;
+        padding-top: 20px 0px;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 500;
+        color: white;
+        font-size: 20px;
+        line-height: 15px;
+        cursor: pointer;
+    }
+
+    label{
+        font-size: 18px;
+        line-height: 27px;
+    }
+    
+    input {
+        font-size: 15px;
+    }
+
+    form{
+        padding: 40px 0px;
+    }
+}

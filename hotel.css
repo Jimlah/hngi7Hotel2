@@ -1,0 +1,141 @@
+body{
+    margin:0
+}
+.logo{
+    font-family: 'Miss Fajardose';
+    font-size: 55px;
+    margin:0
+}
+nav{
+    font-family: 'Poppins';
+    padding:1vw 5vw;
+    background-color: rgba(0, 0, 0, 0.151);
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+ul li{
+    float: left;
+    list-style: none;
+    margin-right: 20px;
+    font-size: 17px;
+}
+a{
+    text-decoration: none;
+    color: rgb(254, 255, 254);
+}
+a:active{
+    color: rgb(255, 255, 255)
+}
+.home-text{
+    margin-top:-100px;
+    color:rgb(255, 255, 255);
+    font-family: Miss Fajardose;
+    font-weight: 200;
+    text-emphasis: center;
+}
+#front{
+    background-image: url("images/front.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:100vh;
+    position: relative;
+}
+.main{
+    font-size: 200px;
+    font-weight: normal;
+    font-family: 'Miss Fajardose', 'cursive';
+}
+.small{
+    margin-top:-270px;
+    color:#C9A96A;
+    font-size: 25px;
+    font-family: Centaur
+}
+.close .small-nav{
+    display: block;
+}
+.small-nav{
+    display: none;
+    text-align:center;
+    position:absolute;
+    background-color: rgb(250, 247, 242);
+    z-index: 4;
+    width:100%;
+    padding:0 0 0 0;
+    margin:0;
+    width: 90%;
+    margin-left: 1.3rem
+}
+.small-nav li{
+    float: none;
+    padding:20px 0;
+    margin: 0;
+}
+.small-nav li a{
+    color:black;
+    font-family:'Poppins';
+    
+}
+.small-nav ul{
+    padding:0;
+}
+.mobile{
+    display: none
+}
+#home{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.tiles{
+    width:20px;
+    height:2px;
+    background-color: white;
+    margin-top:3px;
+}
+
+@media only screen and (max-width:578px){
+    .big-nav{
+        display: none;
+    }
+    nav{
+        align-items: center;
+    }
+    .main{
+        font-size: 90px;
+    }
+    .small{
+        margin-top:-125px;
+        font-size:20px;
+        font-weight:300;
+    }
+    .home-text{
+        color:rgb(255, 255, 255);
+        font-family: Miss Fajardose;
+        font-weight: 200;
+        margin-top:10vh;
+    }
+    #front{
+        background-image: url("images/front1.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        height:100vh;
+    }
+    .change .top{
+        -webkit-transform: rotate(-45deg)translate(1px, 6px);
+        transform: rotate(-45deg)translate(1px, 6px)
+    }
+    .change .center{
+        opacity: 0;
+    }
+    .change .bottom{
+        -webkit-transform: rotate(45deg)translate(-1px, -8px);
+        transform: rotate(45deg)translate(-1px, -8px)
+    }
+    .mobile{
+        display: block;
+    }
+}
