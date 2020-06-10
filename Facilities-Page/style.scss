@@ -1,0 +1,169 @@
+*{
+    box-sizing: border-box;
+    background-color:  #031C29;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    padding: 0 .3rem;
+}
+
+header{
+    display: flex;
+    nav{
+        display: none;
+        font-family: 'Poppins', sans-serif;
+        color: white;
+    }
+}
+
+.main-section{
+  
+color: white;
+h1{
+
+line-height: 45px;
+    span{
+      color: #C9A96A;  
+    }
+    
+}
+}
+
+.second-section{
+    img{
+        width: 100%;
+    }
+
+}
+
+.third-section {
+    img{
+        margin-top: 1rem;
+        width: 100%;
+    }
+}
+
+.fourth-section{
+    img{
+        width: 100%;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+
+.four-section{
+ 
+    img{
+        margin-top: 1rem;
+        width: 100%;
+    }
+}
+
+.fifth-section{
+    img{
+        margin-top: 1rem;
+        width: 100%;
+    }
+}
+
+@media(min-width : 600px){
+    body{
+        margin: 0 auto;
+        max-width: 1200px;
+    }
+    .main-section{
+        margin: 0 auto;
+        max-width: 500px;
+        text-align: center;
+        h1{
+             margin-left: 10rem;
+            font-size: 20px;
+          line-height: 20px;  
+        br{
+        display: none;
+         }
+          
+            }
+    }
+
+    .second-section {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        p{
+        width : 400px
+        }
+        img{
+            width: 65%;
+            height: 300px;
+        }
+      }
+      .third-section {
+          div{
+              display: flex;
+              justify-content: space-between;
+              img{
+                  width: 45%;
+                  height: 300px;
+              }
+              .r-19{
+                  margin-top: 3rem;
+                  height: 270px;
+              }
+          }
+
+      }
+      .r-15{
+          height: 400px;
+          width: 100%;
+      }
+      .fourth-section{
+          div{
+             display: flex;
+        justify-content: space-between;  
+          }
+       
+        img{
+            width: 45%;
+            height: 300px;
+        }
+        .r-21{
+            margin-top: 2.1rem;
+            height: 270px;
+        }
+      }
+      .fifth-section{
+          display: flex;
+          justify-content: space-between;
+          img{
+            width: 300px;
+            height: 300px;
+          }
+          p{
+              width: 300px;
+          }
+      }
+}
+h1{
+    text-align: center;
+}
+
+@media(min-width: 1002px){
+.fifth-section{
+    img{
+        width: 400px;
+        height: 300px;
+    }
+    p{
+        width: 400px;
+    }
+}
+}
+
+@media(min-width : 1300px){
+    .fifth-section{
+        img{
+            width: 500px;
+            height: 300px;
+        }
+    }  
+}

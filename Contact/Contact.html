@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"> -->
+  
+    <link rel="stylesheet" href="../HNG-Hotel-master/shared.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="../HNG-Hotel-master/main.js" defer></script>
+</head>
+<body>
+    <header id="header">
+        <h2>
+            <a href="../index.html">The elite</a>
+        </h2>
+        <nav>
+            <button class="ham" id="hamb">
+                <img class="icon-ham"  src="../HNG-Hotel-master/imgs/icon-hamburger.svg" alt="">
+                <img  class="icon-close" src="../HNG-Hotel-master/imgs/icon-close.svg" alt="">
+            </button>
+
+            <ul class="menu">
+                <li><a href="../Facilities-Page/index.html"> Facilities</a></li>
+                <li><a href="../room and rates/rooms.html">Rooms</a></li>
+                <li><a href="Contact.html" style="color: #C9A96A;">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main-container">
+        <div class="ht-contain">
+            <div id="ht-title">
+                <h1 class="heading">Contact Us.</h1>
+                <p class="subHeading">Our guests are the core of out hotel. Your feedback is paramount to us.</p>
+            </div>
+            
+
+            <form>
+                <div class="col">
+                    <label>Title</label>
+                    <input type="text" name="title" id="title">
+                </div>
+                <div class="ht-row">
+
+                    <div class="col">
+                        <label>First Name</label>
+                        <input type="text" name="firstname" id="firstname" required>
+                    </div>
+
+                    <div class="col">
+                        <label>Last Name</label>
+                        <input type="text" name="lastname" id="lastname" required>
+                    </div>
+
+                </div>
+
+                <div class="ht-row">
+                    <div class="col">
+                        <label>Email</label>
+                        <input type="email" name="email" id="email" class="form-control" required>
+                    </div>
+
+                    <div class="col">
+                        <label>Phone Number</label>
+                        <input type="number" name="phone_number" id="phone_number" class="form-control">
+                    </div>            
+
+                </div>
+                
+                <label>Message</label>
+                <textarea name="message" id="message" cols="30" rows="20" class="form-control" required></textarea>
+                
+                <div class="vertical-center"><button class="btn-hotel">Submit</button></div>
+                
+            </form>
+
+
+        </div>
+    </div>
+
+            <Footer>
+                <span>&copy The elite</span>
+                <span>Terms and conditions</span>
+                <span>All rights reserved</span>
+            </Footer>
+</body>
+</html>
